@@ -1,0 +1,19 @@
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.card-img-top {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 200px; /* ou 180px selon ton design */
+  object-fit: cover;
+  width: 100%;
+}
