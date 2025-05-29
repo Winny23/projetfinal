@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">🍰Chic_café</div>
+    <header class="N001">
+      <div class="logo0">🍰Chic_café</div>
       <nav>
         <a href="index.html">Accueil</a>
-        <a href="apropos.html">À propos</a>
+        <a href="apropos.html">Àpropos</a>
         <a href="produits.html">Produits</a>
         <a href="contact.html">Contact</a>
         <a href="compte.html">Compte</a>
@@ -26,12 +27,36 @@
           Envie d'en savoir plus ? Remplissez notre formulaire pour nous
           joindre.
         </p>
-        <p>
-          Vous avez aussi la possiblité de nous suivre et de nous joindre sur
-          nos autres réseaux
-        </p>
       </div>
     </section>
+   <div class="background-overlay">
+    <div class="inscription-container">
+      <div class="form-box text-center animate-fade">
+        <img src="imagesprod/logoo.jpeg" alt="Logo Douceurs Maison" class="logo mb-4">
+        <h2 class="mb-2">Recevez nos douceurs </h2>
+        <p class="text-muted mb-4">Inscrivez-vous pour découvrir nos nouveautés croustillantes !</p>
+
+        <form id="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Votre nom" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Votre email" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Votre numéro de téléphone" required>
+          </div>
+          <button type="submit" class="btn btn-pink w-100">S’inscrire 🎉</button>
+          <div id="confirmation" class="mt-3 text-success fw-bold" style="display: none;">
+            ✅ Merci pour votre inscription !
+          </div>
+        </form>
+
+        <a href="produits.html" class="btn btn-outline-light mt-4 retour-btn">← Retour aux produits</a>
+      </div>
+    </div>
+  </div>
+
    <footer class="footer">
   <p>&copy; 2025 🍰 Chic_café – Tous droits réservés.</p>
   <div class="social-icons">
@@ -41,5 +66,6 @@
     <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
 </footer>
+    <script src="contact.js"></script>
   </body>
 </html>
