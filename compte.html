@@ -13,8 +13,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-        <link rel="stylesheet" href="cl-icon/css/all.min.css">
-
   </head>
   <body>
     <header class="navbar">
@@ -28,48 +26,153 @@
       </nav>
     </header>
 
-        <section class="hero">
+    <section class="hero fade-in">
       <div class="hero-text">
         <h1>Bienvenue sur votre compte</h1>
         <p>
-        Ici, vous pouvez gérer vos informations personnelles, consulter vos
-        commandes et vous abonner à notre newsletter.
+          Ici, vous pouvez gérer vos informations personnelles, consulter vos
+          commandes et vous abonner à notre newsletter.
         </p>
       </div>
     </section>
 
-
-      
-
-
-    <section class="hero">
-      <div class="hero-text">
-        <p>
-          Pour toute question, n'hésitez pas à nous contacter via notre page de
-          contact.
-        </p>
-      </div>
+    <!-- Formulaire de contact -->
+    <section class="contact-form-section fade-in">
+      <h2>Contactez-nous</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" rows="5" required></textarea>
+        <div class="button-container">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+      </form>
     </section>
 
+    <!-- Tableau des commandes -->
+    <section class="commande-section fade-in">
+      <h2>Mes commandes</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Date</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pancake au chocolat</td>
+            <td>10/05/2025</td>
+            <td>Livré</td>
+          </tr>
+          <tr>
+            <td>Macaron</td>
+            <td>15/05/2025</td>
+            <td>En cours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section fade-in">
+      <h2>Abonnez-vous à notre newsletter</h2>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Votre email" required />
+        <button type="submit" class="btn btn-success">S'abonner</button>
+      </form>
+    </section>
 
     <footer class="footer">
-      <p>&copy; 2025 🍰 Chic_café – Tous droits réservés.</p>
-      <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
-          ><i class="fab fa-tiktok"></i
-        ></a>
-        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
+      <div class="footer-content">
+        <!-- Company Info -->
+        <div class="footer-section">
+          <div class="logo">🍰 Chic_café</div>
+          <p>
+            Nous mettons tout notre cœur dans chaque création gourmande. Notre
+            équipe est constituée de jeunes passionnés qui saupoudrent vos
+            bouchés de merveilles.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="icon-instagram"></i
+            ></a>
+            <a href="#" aria-label="Youtube"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Liens Rapides</h3>
+          <ul class="quick-links">
+            <li><a href="index.html" class="quick-link">Accueil</a></li>
+            <li><a href="apropos.html" class="quick-link">À Propos</a></li>
+            <li><a href="produits.html" class="quick-link">Produits</a></li>
+            <li><a href="contact.html" class="quick-link">Contact</a></li>
+            <li><a href="compte.html" class="quick-link">Compte</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contactez Nous</h3>
+          <div class="contact-info">
+            <a href="mailto:info@Chic_café.com">
+              <i class="icon-mail"></i>
+              <span>info@Chic_café.com</span>
+            </a>
+            <a href="tel:+1234567890">
+              <i class="icon-phone"></i>
+              <span>+1 (234) 567-890</span>
+            </a>
+            <div class="address">
+              <i class="icon-map-pin"></i>
+              <span>Pikine x tall<br />Saint-louis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Abonnez-vous à notre newsletter</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Entrez votre email"
+                required
+              />
+              <button type="submit">
+                <i class="icon-arrow-right"></i>
+              </button>
+            </div>
+            <p id="subscription-status" class="success-message"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>
+            © <span id="current-year"></span> 2025 🍰 Chic_café – Tous droits
+            réservés.
+          </p>
+          <div class="legal-links">
+            <a href="#">Politique de Confidentialité</a>
+            <a href="#">Conditions de Service</a>
+            <a href="#">Politique de Cookies</a>
+          </div>
+        </div>
       </div>
     </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="compte.js"></script>
+
+    <script src="script.js"></script>
+    <script src="compte.js"></script>
   </body>
 </html>
